@@ -1,0 +1,11 @@
+{% extends 'memewebsite/layout.html' %}
+{% block title %}:ShittyPosts{% endblock %}
+{% block content %}
+<center>
+    {% for shittypost in shittyposts %}
+    <a id="shittypost" href="/shittypost/{{ shittypost }}">
+        <div>{{ shittypost }}</div>
+    </a>
+    {% endfor %}
+</center>
+{% endblock %}

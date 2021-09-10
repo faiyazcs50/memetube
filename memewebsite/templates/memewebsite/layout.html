@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'memewebsite/images/favicon.jpg' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'memewebsite/stylesheets/style.css' %}">
+    <title>MemeTube{% block title %}{% endblock %}</title>
+    {% block script %}{% endblock %}
+</head>
+
+<body>
+    <div id="topbar">
+        <a href="{% url 'index' %}" class="links">
+            <p> Memes </p>
+        </a>
+        <a href="{% url 'shittyposts' %}" class="links">
+            <p> ShittyPosts </p>
+        </a>
+        <a href="{% url 'index' %}"><img src="{% static 'memewebsite/images/navbar_img.png' %}" alt=""></a>
+    </div>
+    <center id="content">
+        {% block content %}
+        {% endblock %}
+    </center>
+</body>
+
+</html>

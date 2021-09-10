@@ -1,0 +1,128 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: monospace;
+}
+
+*::selection {
+  background-color: yellow;
+}
+
+#topbar {
+  position: fixed;
+  background-color: yellow;
+  height: 1.4cm;
+  width: 100%;
+  top: 0;
+  position: fixed;
+}
+
+#topbar img {
+  height: 1.4cm;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.links {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  display: inline-flex;
+  font-size: 18px;
+  height: 1.4cm;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.links:hover {
+  background-color: orange;
+}
+
+#content {
+  margin-top: 2cm;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.meme {
+  background-color: silver;
+  height: fit-content;
+  width: 77vmin;
+  border: 1px solid black;
+  margin-top: 1.4cm;
+  padding: 0px 25px 0px 25px;
+}
+
+.meme img {
+  width: 77vmin;
+  object-fit: contain;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: orange;
+  border-radius: 30px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#comming_soon {
+  margin-top: 35vh;
+  margin-bottom: 50vh;
+  font-family: monospace;
+  font-size: 20px;
+  position: absolute;
+}
+
+#comming_soon h1 {
+  width: 100vw;
+}
+
+#shittypost {
+  background-color: yellow;
+  width: 8cm;
+  height: 1cm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-family: monospace;
+  font-weight: 900;
+  margin-top: 0.2cm;
+  text-decoration: none;
+  color: black;
+}
+
+#main {
+  text-align: left;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 0.6cm;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+h1,
+h2 {
+  font-family: monospace;
+}
+
+#kavi_fuckyaz {
+  margin-top: 0.25cm;
+  background: -webkit-linear-gradient(180deg, brown, red, orange, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

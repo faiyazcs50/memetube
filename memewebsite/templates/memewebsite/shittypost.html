@@ -1,0 +1,15 @@
+{% extends 'memewebsite/layout.html' %}
+{% block title %}:{{ shittypost.title }}{% endblock %}
+{% block content %}
+<h1 style="margin-bottom: 0.35cm;">{{ shittypost.title }}</h1>
+{% if shittypost.adult %}
+<h2 style="color: red; margin-bottom: 0.2cm; ">Disclaimer: This contains Adult content so if you are sanskari person
+    fuck off!</h2>
+{% endif %}
+<div style="text-align: left; font-size: 18px; ">
+    {{ shittypost.content|safe }}
+</div>
+<a href="https://www.instagram.com/faiyaz.makda/" style="text-decoration-style: wavy; ">
+    <h1 id="kavi_fuckyaz">Kavi FuckYaz</h1>
+</a>
+{% endblock %}
